@@ -1,5 +1,7 @@
 class People
-  @name
+  def name
+    @name
+  end
   attr_accessor :name
   def initialize
     p "Peopleのインスタンスが作られました"
@@ -10,5 +12,7 @@ class People
 end
 
 class ChildPeple < People
-  p "私は目からビームが出せます"
+  def self.beem
+    p "私は目からビームが出せます"
+  end
 end
